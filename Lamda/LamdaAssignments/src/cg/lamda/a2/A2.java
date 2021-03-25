@@ -23,6 +23,9 @@ public class A2 {
 		System.out.println("Order status is Accepted or Completed");
 		orders.stream().filter(s->(s.status=="accepted")||(s.status=="completed")).forEach(System.out::println);
 		
+		System.out.println("Order price more than 10000:");
+		orders.forEach(p->System.out.println(p.price>10000));
+		
 		
 
 	}
